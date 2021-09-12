@@ -33,14 +33,14 @@ def looping_check(gateway, host_ip):
         elif choice1 == '2':
             ################# Creating account section ###################
             print()
-            acc_name = input('Enter RIGHT account name you want to add: ')
-            status = 'Active'
-            creation_time = input('Enter account creation date: ')
-            approve = input('Enter base of approve: ')
-            location = input('Enter location of worker: ')
-            dept = input('Enter department of user: ')
+            acc_name = input('Enter RIGHT account name you want to add: ') #VPN account name
+            status = 'Active' #VPN account status
+            creation_time = input('Enter account creation date: ') #VPN account creation time
+            approve = input('Enter base of approve: ') #VPN account base of approve (ex. ticket number)
+            location = input('Enter location of worker: ') #User's location
+            dept = input('Enter department of user: ') #User's departament
             printAddrLists(gateway)
-            pcname = ''
+            pcname = '' #User's PC name to connect after VPN
             addr_list = input('Enter strict address list name: ')
             if addr_list.find('default') != -1:
                 pcname = input("Enter user's computer hostname: ")
